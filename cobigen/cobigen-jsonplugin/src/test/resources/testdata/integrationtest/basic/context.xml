@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contextConfiguration xmlns="http://capgemini.com/devonfw/cobigen/ContextConfiguration" version="2.1">
+  <trigger id="json1" type="json" templateFolder="templates">
+    <matcher type="jsonpath" value="$.descriptor.app3">
+      <variableAssignment type="constant" key="name" value="name"/>
+      <variableAssignment type="constant" key="age" value="age"/>
+      <variableAssignment type="jsonpath" key="messages" value="$.[0]"/>
+
+    </matcher>
+  </trigger>
+</contextConfiguration>
